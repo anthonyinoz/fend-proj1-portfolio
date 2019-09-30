@@ -1,0 +1,179 @@
+body {
+
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link {
+
+    color: red;
+}
+
+a:visited {
+
+    color: purple;
+}
+
+.outer-wrapper {
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-logo {
+
+    max-width: 30%;
+    height: auto;
+}
+
+.header-title {
+
+    margin-top: 0px;
+    white-space: nowrap;
+    font-size: 7vw;
+    /* use media query to set maximum font-size */
+}
+
+p {
+
+    font-size: 20px;
+}
+
+.sections-wrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.hero {
+
+    display: flex;
+    flex-basis: 100%;
+    align-items: flex-start;
+    background-color: #00800029;
+    border: 1px inset #C0C0C0;
+}
+
+.hero-content {
+
+    max-width: 80%;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-top: 1px;
+}
+
+.hero img {
+
+    flex-shrink: 0;
+    margin-bottom: auto;
+}
+
+.asection {
+
+    flex-basis: 30%;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.section1 {
+
+    background-image: url("../images/binary-3725329__340.jpg");
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: contain;
+    color: yellow;
+    padding-left: 20px;
+}
+
+.lower-sections {
+
+    display: flex;
+}
+
+.section2 {
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section2-content {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin-left: 10px;
+    margin-right: auto;
+    flex-grow: 0;
+    justify-content: flex-start;
+}
+
+.section2 h2 {
+
+    flex-basis: 100%;
+    margin-top: 5px;
+    margin-right: 2px;
+}
+
+.section2 p {
+
+    margin-top: 5px;
+    margin-right: 2px;
+}
+
+.section2 img {
+
+    margin-left: auto;
+    margin-right: 2px;
+}
+
+.section3 {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #8200ff66;
+    align-items: flex-start;
+}
+
+.section3 img {
+
+    object-fit: contain;
+}
+
+.section3-content {
+
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.section3 p {
+
+    margin-top: 0px;
+}
+
+@media screen and (min-width: 550px){
+
+    .header-title {
+
+        font-size: 46px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    .lower-sections {
+
+        flex-direction: column;
+    }
+}
